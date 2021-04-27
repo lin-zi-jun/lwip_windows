@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{e858c3d0-1558-4d47-bc6a-9d4a55ce3d3a}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\apps">
+      <UniqueIdentifier>{0582eefd-a68e-45f8-b93c-f828c4794f30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\addons">
+      <UniqueIdentifier>{ed0627c2-099a-4da8-af0c-142003828f9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\addons\tcp_isn">
+      <UniqueIdentifier>{4ffb2268-6fc6-44d7-8e3b-2a3f68b8d5a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\onenet">
+      <UniqueIdentifier>{3f29ada5-4e48-458a-bf8e-0c0dba586e11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\aliyun">
+      <UniqueIdentifier>{767d7ca5-d70b-420a-8079-79be14ee1dfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\aliyun\auth">
+      <UniqueIdentifier>{7b720b67-3bdb-4c99-be6d-cb82022f33ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\aliyun\libs">
+      <UniqueIdentifier>{8415c154-0cc1-4901-8202-d20db8a12581}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\aliyun\mqtt">
+      <UniqueIdentifier>{07eaa2f3-c3eb-4cdb-9fbe-bfeba5ddfc40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\aliyun\mqtt\MQTTPacket">
+      <UniqueIdentifier>{18a94713-b7e0-4451-98d9-ad0c160fc7dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\aliyun\platform">
+      <UniqueIdentifier>{aea1e6c3-5702-4058-8d3d-4028063fc99a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\aliyun\platform\os">
+      <UniqueIdentifier>{0f50c077-bae9-484b-8800-6b1d6464990b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\aliyun\platform\ssl">
+      <UniqueIdentifier>{158fd33d-07bc-407e-9707-214cdd84ac7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\aliyun\system">
+      <UniqueIdentifier>{c82217d0-40e2-4129-a38a-6d31f8c556b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\aliyun\utility">
+      <UniqueIdentifier>{0b9fea27-223b-43e0-9ab5-6f905392e51b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\apps\chargen\chargen.c">
+      <Filter>Source Files\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\apps\httpserver\httpserver-netconn.c">
+      <Filter>Source Files\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\apps\netio\netio.c">
+      <Filter>Source Files\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\apps\ping\ping.c">
+      <Filter>Source Files\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\apps\rtp\rtp.c">
+      <Filter>Source Files\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\apps\shell\shell.c">
+      <Filter>Source Files\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\apps\smtp\smtp.c">
+      <Filter>Source Files\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\apps\socket_examples\socket_examples.c">
+      <Filter>Source Files\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\apps\tcpecho\tcpecho.c">
+      <Filter>Source Files\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\apps\udpecho\udpecho.c">
+      <Filter>Source Files\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\apps\tcpecho_raw\tcpecho_raw.c">
+      <Filter>Source Files\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\apps\udpecho_raw\udpecho_raw.c">
+      <Filter>Source Files\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\apps\snmp_private_mib\lwip_prvmib.c">
+      <Filter>Source Files\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\tcp_isn\tcp_isn.c">
+      <Filter>Source Files\addons\tcp_isn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\edp_c-master\c\cJSON.c">
+      <Filter>Source Files\onenet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\edp_c-master\c\edp_demo.c">
+      <Filter>Source Files\onenet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\edp_c-master\c\EdpKit.c">
+      <Filter>Source Files\onenet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\edp_c-master\c\http_demo.c">
+      <Filter>Source Files\onenet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\auth\aliyun_iot_auth.c">
+      <Filter>Source Files\aliyun\auth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\aes.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\aesni.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\arc4.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\asn1parse.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\asn1write.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\base64.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\bignum.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\blowfish.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\camellia.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ccm.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\certs.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\cipher.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\cipher_wrap.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ctr_drbg.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\debug.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\des.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\dhm.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ecdh.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ecdsa.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ecjpake.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ecp.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ecp_curves.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\entropy.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\entropy_poll.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\error.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\gcm.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\havege.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\hmac_drbg.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\md.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\md_wrap.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\md2.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\md4.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\md5.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\memory_buffer_alloc.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\net.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\oid.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\padlock.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\pem.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\pk.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\pk_wrap.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\pkcs5.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\pkcs11.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\pkcs12.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\pkparse.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\pkwrite.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\platform.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ripemd160.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\rsa.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\sha1.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\sha256.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\sha512.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ssl_cache.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ssl_ciphersuites.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ssl_cli.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ssl_cookie.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ssl_srv.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ssl_ticket.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ssl_tls.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\threading.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\timing.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\version.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\version_features.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\x509.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\x509_create.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\x509_crl.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\x509_crt.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\x509_csr.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\x509write_crt.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\x509write_csr.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\xtea.c">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\mqtt\aliyun_iot_mqtt_client.c">
+      <Filter>Source Files\aliyun\mqtt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTConnectClient.c">
+      <Filter>Source Files\aliyun\mqtt\MQTTPacket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTConnectServer.c">
+      <Filter>Source Files\aliyun\mqtt\MQTTPacket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTDeserializePublish.c">
+      <Filter>Source Files\aliyun\mqtt\MQTTPacket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTFormat.c">
+      <Filter>Source Files\aliyun\mqtt\MQTTPacket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTPacket.c">
+      <Filter>Source Files\aliyun\mqtt\MQTTPacket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTSerializePublish.c">
+      <Filter>Source Files\aliyun\mqtt\MQTTPacket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTSubscribeClient.c">
+      <Filter>Source Files\aliyun\mqtt\MQTTPacket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTSubscribeServer.c">
+      <Filter>Source Files\aliyun\mqtt\MQTTPacket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTUnsubscribeClient.c">
+      <Filter>Source Files\aliyun\mqtt\MQTTPacket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTUnsubscribeServer.c">
+      <Filter>Source Files\aliyun\mqtt\MQTTPacket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\platform\os\linux\aliyun_iot_platform_memory.c">
+      <Filter>Source Files\aliyun\platform\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\platform\os\linux\aliyun_iot_platform_network.c">
+      <Filter>Source Files\aliyun\platform\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\platform\os\linux\aliyun_iot_platform_pthread.c">
+      <Filter>Source Files\aliyun\platform\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\platform\os\linux\aliyun_iot_platform_sem.c">
+      <Filter>Source Files\aliyun\platform\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\platform\os\linux\aliyun_iot_platform_timer.c">
+      <Filter>Source Files\aliyun\platform\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\platform\ssl\mbedtls\aliyun_iot_network_ssl.c">
+      <Filter>Source Files\aliyun\platform\ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\system\aliyun_iot_ca.c">
+      <Filter>Source Files\aliyun\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\system\aliyun_iot_device.c">
+      <Filter>Source Files\aliyun\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_base64.c">
+      <Filter>Source Files\aliyun\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_hexdump.c">
+      <Filter>Source Files\aliyun\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_hmac.c">
+      <Filter>Source Files\aliyun\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_httpclient.c">
+      <Filter>Source Files\aliyun\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_jsonparser.c">
+      <Filter>Source Files\aliyun\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_list.c">
+      <Filter>Source Files\aliyun\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_log.c">
+      <Filter>Source Files\aliyun\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_md5.c">
+      <Filter>Source Files\aliyun\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_net.c">
+      <Filter>Source Files\aliyun\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_sha1.c">
+      <Filter>Source Files\aliyun\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_timer.c">
+      <Filter>Source Files\aliyun\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\sample\mqtt\mqtt.c">
+      <Filter>Source Files\aliyun</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\apps\chargen\chargen.h">
+      <Filter>Source Files\apps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\apps\httpserver\httpserver-netconn.h">
+      <Filter>Source Files\apps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\apps\netio\netio.h">
+      <Filter>Source Files\apps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\apps\ping\ping.h">
+      <Filter>Source Files\apps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\apps\rtp\rtp.h">
+      <Filter>Source Files\apps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\apps\shell\shell.h">
+      <Filter>Source Files\apps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\apps\smtp\smtp.h">
+      <Filter>Source Files\apps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\apps\socket_examples\socket_examples.h">
+      <Filter>Source Files\apps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\apps\tcpecho\tcpecho.h">
+      <Filter>Source Files\apps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\apps\udpecho\udpecho.h">
+      <Filter>Source Files\apps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\apps\tcpecho_raw\tcpecho_raw.h">
+      <Filter>Source Files\apps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\apps\udpecho_raw\udpecho_raw.h">
+      <Filter>Source Files\apps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\apps\snmp_private_mib\private_mib.h">
+      <Filter>Source Files\apps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\tcp_isn\tcp_isn.h">
+      <Filter>Source Files\addons\tcp_isn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\edp_c-master\c\cJSON.h">
+      <Filter>Source Files\onenet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\edp_c-master\c\Common.h">
+      <Filter>Source Files\onenet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\edp_c-master\c\edp_demo.h">
+      <Filter>Source Files\onenet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\edp_c-master\c\EdpKit.h">
+      <Filter>Source Files\onenet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\edp_c-master\c\http_demo.h">
+      <Filter>Source Files\onenet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTConnect.h">
+      <Filter>Source Files\aliyun\mqtt\MQTTPacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTFormat.h">
+      <Filter>Source Files\aliyun\mqtt\MQTTPacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTPacket.h">
+      <Filter>Source Files\aliyun\mqtt\MQTTPacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTPublish.h">
+      <Filter>Source Files\aliyun\mqtt\MQTTPacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTSubscribe.h">
+      <Filter>Source Files\aliyun\mqtt\MQTTPacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTUnsubscribe.h">
+      <Filter>Source Files\aliyun\mqtt\MQTTPacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\StackTrace.h">
+      <Filter>Source Files\aliyun\mqtt\MQTTPacket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\platform\os\linux\aliyun_iot_platform_datatype.h">
+      <Filter>Source Files\aliyun\platform\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\platform\os\linux\aliyun_iot_platform_memory.h">
+      <Filter>Source Files\aliyun\platform\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\platform\os\linux\aliyun_iot_platform_network.h">
+      <Filter>Source Files\aliyun\platform\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\platform\os\linux\aliyun_iot_platform_pthread.h">
+      <Filter>Source Files\aliyun\platform\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\platform\os\linux\aliyun_iot_platform_sem.h">
+      <Filter>Source Files\aliyun\platform\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\platform\os\linux\aliyun_iot_platform_timer.h">
+      <Filter>Source Files\aliyun\platform\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\platform\ssl\mbedtls\aliyun_iot_network_ssl.h">
+      <Filter>Source Files\aliyun\platform\ssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\system\aliyun_iot_ca.h">
+      <Filter>Source Files\aliyun\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\system\aliyun_iot_device.h">
+      <Filter>Source Files\aliyun\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_base64.h">
+      <Filter>Source Files\aliyun\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_debug.h">
+      <Filter>Source Files\aliyun\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_error.h">
+      <Filter>Source Files\aliyun\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_hexdump.h">
+      <Filter>Source Files\aliyun\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_hmac.h">
+      <Filter>Source Files\aliyun\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_httpclient.h">
+      <Filter>Source Files\aliyun\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_jsonparser.h">
+      <Filter>Source Files\aliyun\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_list.h">
+      <Filter>Source Files\aliyun\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_log.h">
+      <Filter>Source Files\aliyun\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_md5.h">
+      <Filter>Source Files\aliyun\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_net.h">
+      <Filter>Source Files\aliyun\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_sha1.h">
+      <Filter>Source Files\aliyun\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_timer.h">
+      <Filter>Source Files\aliyun\utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.txt" />
+    <None Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\CMakeLists.txt">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </None>
+    <None Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\Makefile">
+      <Filter>Source Files\aliyun\libs</Filter>
+    </None>
+  </ItemGroup>
+</Project>

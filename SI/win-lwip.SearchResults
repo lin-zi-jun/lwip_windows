@@ -1,0 +1,4 @@
+---- MQTTPubInfoProc Matches (3 in 1 files) ----
+Aliyun_iot_mqtt_client.c (iotx-sdk-c\src\mqtt):* 函数名称: MQTTPubInfoProc
+Aliyun_iot_mqtt_client.c (iotx-sdk-c\src\mqtt):int MQTTPubInfoProc(MQTTClient_t *pClient)
+Aliyun_iot_mqtt_client.c (iotx-sdk-c\src\mqtt):        (void)MQTTPubInfoProc(pClient);

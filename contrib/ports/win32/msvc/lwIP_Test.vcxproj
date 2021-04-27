@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8CC0CE51-32CF-4585-BFAF-A9343BC5A96D}</ProjectGuid>
+    <RootNamespace>lwIP_test</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <TypeLibraryName>.\Release/test.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\..\..\lwip\src\include;..\..\..\..\lwip\src\include\ipv4;..\..\..\..\lwip\src\include\ipv6;..\include;..;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <TreatWarningAsError>true</TreatWarningAsError>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0407</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Packet.lib;wpcap.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(PCAP_DIR)\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>.\Release/test.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <TypeLibraryName>.\Debug/test.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\iotx-sdk-c\src\libs\mbedtls\include\mbedtls;..\..\..\..\iotx-sdk-c\src\shadow;..\..\..\..\iotx-sdk-c\src\utility;..\..\..\..\iotx-sdk-c\src\system;..\..\..\..\iotx-sdk-c\src\platform\ssl\mbedtls;..\..\..\..\iotx-sdk-c\src\platform\os\linux;..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket;..\..\..\..\iotx-sdk-c\src\mqtt;..\..\..\..\iotx-sdk-c\src\libs\mbedtls\configs\linux;..\..\..\..\iotx-sdk-c\src\libs\mbedtls\include;..\..\..\..\iotx-sdk-c\src\auth;..\..\..\..\lwip\src\include;..\..\..\..\lwip\src\include\ipv4;..\..\..\..\lwip\src\include\ipv6;..\include;..;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CONSOLE;WIN32;_DEBUG;LWIP_DEBUG;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0407</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Packet.lib;wpcap.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(PCAP_DIR)\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\edp_c-master\c\cJSON.c" />
+    <ClCompile Include="..\..\..\..\edp_c-master\c\EdpKit.c" />
+    <ClCompile Include="..\..\..\..\edp_c-master\c\edp_demo.c" />
+    <ClCompile Include="..\..\..\..\edp_c-master\c\http_demo.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\sample\mqtt\mqtt.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\auth\aliyun_iot_auth.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\aes.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\aesni.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\arc4.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\asn1parse.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\asn1write.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\base64.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\bignum.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\blowfish.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\camellia.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ccm.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\certs.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\cipher.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\cipher_wrap.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ctr_drbg.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\debug.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\des.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\dhm.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ecdh.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ecdsa.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ecjpake.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ecp.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ecp_curves.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\entropy.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\entropy_poll.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\error.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\gcm.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\havege.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\hmac_drbg.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\md.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\md2.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\md4.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\md5.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\md_wrap.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\memory_buffer_alloc.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\net.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\oid.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\padlock.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\pem.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\pk.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\pkcs11.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\pkcs12.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\pkcs5.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\pkparse.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\pkwrite.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\pk_wrap.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\platform.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ripemd160.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\rsa.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\sha1.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\sha256.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\sha512.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ssl_cache.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ssl_ciphersuites.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ssl_cli.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ssl_cookie.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ssl_srv.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ssl_ticket.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\ssl_tls.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\threading.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\timing.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\version.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\version_features.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\x509.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\x509write_crt.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\x509write_csr.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\x509_create.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\x509_crl.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\x509_crt.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\x509_csr.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\xtea.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\mqtt\aliyun_iot_mqtt_client.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTConnectClient.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTConnectServer.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTDeserializePublish.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTFormat.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTPacket.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTSerializePublish.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTSubscribeClient.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTSubscribeServer.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTUnsubscribeClient.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTUnsubscribeServer.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\platform\os\linux\aliyun_iot_platform_memory.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\platform\os\linux\aliyun_iot_platform_network.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\platform\os\linux\aliyun_iot_platform_pthread.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\platform\os\linux\aliyun_iot_platform_sem.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\platform\os\linux\aliyun_iot_platform_timer.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\platform\ssl\mbedtls\aliyun_iot_network_ssl.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\system\aliyun_iot_ca.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\system\aliyun_iot_device.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_base64.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_hexdump.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_hmac.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_httpclient.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_jsonparser.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_list.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_log.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_md5.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_net.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_sha1.c" />
+    <ClCompile Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_timer.c" />
+    <ClCompile Include="..\..\..\addons\tcp_isn\tcp_isn.c" />
+    <ClCompile Include="..\..\..\apps\tcpecho_raw\tcpecho_raw.c" />
+    <ClCompile Include="..\..\..\apps\udpecho_raw\udpecho_raw.c" />
+    <ClCompile Include="..\test.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\..\..\apps\chargen\chargen.c" />
+    <ClCompile Include="..\..\..\apps\httpserver\httpserver-netconn.c" />
+    <ClCompile Include="..\..\..\apps\netio\netio.c" />
+    <ClCompile Include="..\..\..\apps\ping\ping.c" />
+    <ClCompile Include="..\..\..\apps\rtp\rtp.c" />
+    <ClCompile Include="..\..\..\apps\shell\shell.c" />
+    <ClCompile Include="..\..\..\apps\smtp\smtp.c" />
+    <ClCompile Include="..\..\..\apps\socket_examples\socket_examples.c" />
+    <ClCompile Include="..\..\..\apps\tcpecho\tcpecho.c" />
+    <ClCompile Include="..\..\..\apps\udpecho\udpecho.c" />
+    <ClCompile Include="..\..\..\apps\snmp_private_mib\lwip_prvmib.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\edp_c-master\c\cJSON.h" />
+    <ClInclude Include="..\..\..\..\edp_c-master\c\Common.h" />
+    <ClInclude Include="..\..\..\..\edp_c-master\c\EdpKit.h" />
+    <ClInclude Include="..\..\..\..\edp_c-master\c\edp_demo.h" />
+    <ClInclude Include="..\..\..\..\edp_c-master\c\http_demo.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTConnect.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTFormat.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTPacket.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTPublish.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTSubscribe.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\MQTTUnsubscribe.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\mqtt\MQTTPacket\StackTrace.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\platform\os\linux\aliyun_iot_platform_datatype.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\platform\os\linux\aliyun_iot_platform_memory.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\platform\os\linux\aliyun_iot_platform_network.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\platform\os\linux\aliyun_iot_platform_pthread.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\platform\os\linux\aliyun_iot_platform_sem.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\platform\os\linux\aliyun_iot_platform_timer.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\platform\ssl\mbedtls\aliyun_iot_network_ssl.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\system\aliyun_iot_ca.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\system\aliyun_iot_device.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_base64.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_debug.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_error.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_hexdump.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_hmac.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_httpclient.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_jsonparser.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_list.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_log.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_md5.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_net.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_sha1.h" />
+    <ClInclude Include="..\..\..\..\iotx-sdk-c\src\utility\aliyun_iot_common_timer.h" />
+    <ClInclude Include="..\..\..\addons\tcp_isn\tcp_isn.h" />
+    <ClInclude Include="..\..\..\apps\chargen\chargen.h" />
+    <ClInclude Include="..\..\..\apps\httpserver\httpserver-netconn.h" />
+    <ClInclude Include="..\..\..\apps\netio\netio.h" />
+    <ClInclude Include="..\..\..\apps\ping\ping.h" />
+    <ClInclude Include="..\..\..\apps\rtp\rtp.h" />
+    <ClInclude Include="..\..\..\apps\shell\shell.h" />
+    <ClInclude Include="..\..\..\apps\smtp\smtp.h" />
+    <ClInclude Include="..\..\..\apps\socket_examples\socket_examples.h" />
+    <ClInclude Include="..\..\..\apps\tcpecho\tcpecho.h" />
+    <ClInclude Include="..\..\..\apps\tcpecho_raw\tcpecho_raw.h" />
+    <ClInclude Include="..\..\..\apps\udpecho\udpecho.h" />
+    <ClInclude Include="..\..\..\apps\snmp_private_mib\private_mib.h" />
+    <ClInclude Include="..\..\..\apps\udpecho_raw\udpecho_raw.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\CMakeLists.txt" />
+    <None Include="..\..\..\..\iotx-sdk-c\src\libs\mbedtls\library\Makefile" />
+    <None Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="lwIP.vcxproj">
+      <Project>{2cc276fa-b226-49c9-8f82-7fcd5a228e28}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="lwIP_pcapif.vcxproj">
+      <Project>{6f44e49e-9f21-4144-91ec-53b92aef62ce}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
