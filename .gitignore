@@ -1,0 +1,8 @@
+
+*.obj
+
+*.tlog
+
+*.log
+
+contrib/ports/win32/msvc/Debug/
