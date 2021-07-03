@@ -6,3 +6,9 @@
 *.log
 
 contrib/ports/win32/msvc/Debug/
+
+*.sdf
+
+*.suo
+
+*.ipch
