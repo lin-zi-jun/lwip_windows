@@ -2182,7 +2182,7 @@ int MQTTSubInfoProc(MQTTClient_t *pClient)
 ************************************************************/
 void* aliyun_iot_keepalive_thread(void * param)
 {
-    uint32_t cnt;
+    uint32_t cnt = 0;
     MQTTClient_t* pClient = (MQTTClient_t* )param;
     //Cycle time
     aliot_timer_t timer;
